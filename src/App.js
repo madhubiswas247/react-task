@@ -24,32 +24,6 @@ console.log("count",count);
           )
         }
        </div>
-       
-
-       <div className="App" role="counter">
-          hey name {count}
-          <button onClick={()=>setCount(count+1)}>Increase</button>
-          <button onClick={()=>setCount((prevState,props) => {
-          console.log("prevState",prevState);
-          return prevState+1;
-            })
-          }
-          >Increase Func</button>
-      </div>
-
-      <div role="mapping">
-        {
-          names.map(name=>
-            <div>{name}</div>
-          )
-        }
-        <button onClick={()=>setNames((prevState,prevProps)=>{
-          const newState =[...prevState,'madhu'];
-          return newState;
-        })}>update Name</button>
-      </div>
-
-      <div>hello</div>
 
     </div>    
   );
